@@ -1,0 +1,172 @@
+.hangman__container{
+	height:250px;
+	width: 500px;
+}
+
+.contenido{
+	width: 95vw;
+	height: 80vh;
+	margin-top: -100px;
+
+}
+
+
+#ahorcado{
+	height:212px;
+	width: 205px;
+	background-image: url("hangman-game_pm-1024x212.webp");
+	margin: auto;
+	
+}
+
+.colorJuegoPerdido{
+	background-color: red;
+
+}
+
+.keyboard{
+	margin-left:10px;
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+
+}
+
+
+.keyboard:hover{
+	cursor: pointer;
+}
+
+#errores{
+	display: flex;
+	justify-content: center;
+}
+
+#palabra_buscada{
+	text-align: center;
+
+}
+
+.ganador {
+	display: none;
+	width: 100%;
+	position: fixed;
+	background-color: #fff;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 80px;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-image: url("fondo_ganador.png");
+	color: #fff;
+	
+
+}
+
+#volver{
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#volver_flecha{
+	/*text-align: center;*/
+	margin:auto;
+	color: #ba0303;
+}
+
+.perdedor {
+	display: none;
+	width: 100%;
+	position: fixed;
+	background-color: #fff;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 50px;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	
+}
+
+#volver2{
+	font-size: 20px;
+	font-weight: bold;
+}
+#volver_flecha2{
+	margin:auto;
+	color: #ba0303;
+}
+
+
+
+@media screen and (max-width: 1024px){
+	.contenido{
+		width: 100%;
+		height: 100%;
+		margin-top: 0px;
+
+	}
+	.keyboard{
+		margin-left:10px;
+		display: flex;
+		justify-content: center;
+		padding: 3px;
+		margin-top: 200px;
+
+
+	}
+	.hangman__container{
+		height:550px;
+		width: 600px;
+	}
+	
+}
+
+
+@media screen and (max-width: 768px){
+	.contenido{
+		width: 100%;
+		height: 100%;
+		margin-top: 0px;
+
+	}
+	.hangman__container{
+		height:250px;
+		width: 400px;
+		margin-top: -100px;
+	}
+
+	.keyboard{
+		margin-top: 20px;
+		margin-left:3px;
+		display: flex;
+		justify-content: center;
+		padding: 0px;
+
+	}
+
+
+
+}
+
+
+
+/*@media screen and (max-width: 2000px){
+	.hangman__container{
+		height:250px;
+		width: 400px;
+		margin-top: -200px;
+	}
+	.keyboard{
+		margin-top: 10px;
+		margin-left:3px;
+		display: flex;
+		justify-content: center;
+		padding: 0px;
+
+	}
+}
