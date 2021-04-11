@@ -1,0 +1,245 @@
+body{
+	background-color: #cab055;
+}
+
+.header h1{
+	font-family: Londrina Solid;
+	font-size: 50px;
+	text-align: center;
+}
+
+
+.hangman__container{
+	height:250px;
+	width: 500px;
+}
+
+.contenido{
+	width: 95vw;
+	height: 90vh;
+	margin-top: 100px;
+	margin: auto;
+	background-color: #cab055;
+}
+
+.sacarLetra{
+	display: none;
+}
+
+
+#ahorcado{
+	height:212px;
+	width: 205px;
+	background-image: url("hangman-game_pm-1024x212.webp");
+	margin: auto;
+	
+}
+
+
+
+.keyboard{
+	margin-left:10px;
+	display: grid;
+	grid-template-columns: repeat(13, 1fr);
+	grid-gap: 5px;
+	
+	padding: 10px;
+	text-align: center;
+
+
+}
+
+.keyboard__key{
+	background-color: #1272a9;
+	padding: 1rem;
+	cursor: pointer;
+}
+
+
+
+#errores{
+	display: flex;
+	justify-content: center;
+}
+
+#palabra_buscada{
+	text-align: center;
+
+}
+
+.ganador {
+	display: none;
+	width: 100%;
+	position: fixed;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 80px;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-image: url("fondo_ganador.png");
+	color: #fff;
+}
+
+
+
+#volver{
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#volver_flecha{
+	/*text-align: center;*/
+	margin:auto;
+	color: #ba0303;
+	cursor: pointer;
+}
+
+.perdedor {
+	display: none;
+	background-color: #cac5c4;
+	width: 100%;
+	position: fixed;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 50px;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-image: url("Blood.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+
+}
+
+#volver2{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#volver_flecha2{
+	margin:auto;
+	color: #ba0303;
+	cursor: pointer;
+}
+
+.keyboard__key-used{
+	opacity: 0;
+}
+
+@media screen and (max-width: 1024px){
+	body{
+		background-color: #cab055;
+	}
+
+	.header h1{
+		font-size: 80px;
+	}
+	.contenido{
+		width: 100%;
+		height: 100%;
+		margin-top: 200px;
+
+
+	}
+	
+	.hangman__container{
+		height:550px;
+		width: 600px;
+
+	}
+
+	.keyboard{
+		margin-left:10px;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-gap: 10px;
+		margin-top: 150px;
+		padding: 10px;
+		text-align: center;
+
+
+	}
+	#ahorcado{
+		height:212px;
+		width: 205px;
+		background-image: url("hangman-game_pm-1024x212.webp");
+		margin-top: -150px;
+	
+	}
+
+	#palabra_buscada{
+		margin-top: 200px;
+	}
+
+	#errores{
+		margin-top: 100px;
+	}
+	
+	
+}
+
+
+@media screen and (max-width: 768px){
+	.contenido{
+		width: 100%;
+		height: 100%;
+		margin-top: 0px;
+
+	}
+	.hangman__container{
+		height:250px;
+		width: 400px;
+		margin-top: -100px;
+	}
+
+	.keyboard{
+		margin-left:10px;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-gap: 10px;
+		margin-top: 50px;
+		padding: 10px;
+		text-align: center;
+
+
+	}
+	#ahorcado{
+		height:212px;
+		width: 205px;
+		background-image: url("hangman-game_pm-1024x212.webp");
+		margin-top: -80px;
+	
+	}
+	#palabra_buscada{
+		margin-top: 50px;
+	}
+
+	#errores{
+		margin-top: 0px;
+	}
+
+
+
+}
+
+
+
+/*@media screen and (max-width: 2000px){
+	.hangman__container{
+		height:250px;
+		width: 400px;
+		margin-top: -200px;
+	}
+	.keyboard{
+		margin-top: 10px;
+		margin-left:3px;
+		display: flex;
+		justify-content: center;
+		padding: 0px;
+
+	}
+}
